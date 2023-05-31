@@ -21,28 +21,28 @@ Stor (and work with) data about restaurants and reviews for these restaurants
   - learn how to delete data in our database tables
 
 - Install & set up our SQL database system / software
-  SQL: Strcutre Query Langugage,
-  RDMS : Relational Database Management System
+- SQL: Strcutre Query Langugage,
+- RDMS : Relational Database Management System
 
-Which one?
-Open Source : MySQL, PostgreSQL,
-Commercial License : Microsoft SQL, etc
+- Which one?
+  - Open Source : MySQL, PostgreSQL,
+  - Commercial License : Microsoft SQL, etc
 
 - mysql 설치
 
 1. 구글에서 mysql 검색
 2. 2.4MB 다운로드해서 선택적 설치, 'no thanks. just start my download' 클릭하면 로그인 필요 없음.
-   https://dev.mysql.com/downloads/file/?id=518834
+   -  https://dev.mysql.com/downloads/file/?id=518834
 3. 옵션 선택
-   Custom - mysql server는 최신 버전으로 선택
-   application - mysql workbench 최신 버전 선택
-   2개 선택 후 인스톨 후 전부 default로 설정 및 암호 설정, 윈도우시작 시 서버 실행은 체크해제
+   -  Custom - mysql server는 최신 버전으로 선택
+   -  application - mysql workbench 최신 버전 선택
+   -  2개 선택 후 인스톨 후 전부 default로 설정 및 암호 설정, 윈도우시작 시 서버 실행은 체크해제
 4. 윈도우 - 서비스 - mysql을 찾아서 서버 스톱,스타트 가능
 5. workbench를 찾아서 실행 후 mysql 로그인
 
 - 데이타베이스 시스템 vs 데이타베이스
-  mySQL은 소프트웨어이고, mySQL server가 실제 데이터베이스, workbench는 도구
-  mySQL server 안에 database가 있고, 그 안에 테이블과 데이터가 존재함.
+  - mySQL은 소프트웨어이고, mySQL server가 실제 데이터베이스, workbench는 도구
+  - mySQL server 안에 database가 있고, 그 안에 테이블과 데이터가 존재함.
 
 ```sql
 -- 레스토랑, 리뷰 실습
@@ -211,9 +211,9 @@ one to one :
 
 - One record in table A is related to exactly one other record in table B.
 - A team has exactly one team leader and that team leader leads exactly one team.
-  one-to-many :
+    - one-to-many :
 - One record in table A is related to many records in B, each record in B is only related to one record in A
 - A restaurant has many reviews but each review is for exactly one restaurant
-  many-to-many :
+    - many-to-many :
 - One record in table A is related to many records in B, each record in B is also related to many record in A
 - A restaurant has many customers and each customer visits many restaurants.
